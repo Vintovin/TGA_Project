@@ -12,6 +12,10 @@ Email: vitorio@vitorio.click
 Date/Time: DD/MM/YY(YY) HH(:)MM
 
 ##
+### External Links
+https://miro.com/app/board/uXjVOZ76omY=/ - Project Dataflow Board
+
+##
 
 ## Areas of Development
 This will outline the areas of development which I am responsible for within the TGA Project
