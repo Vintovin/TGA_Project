@@ -41,6 +41,66 @@ In this case, the output would be
 ```
 
 ## Usage
+### Objects
+As this module is using an OOP Paradigm, it is important to understand the possible objects utilised within the module to make best use of it.
+
+The End/Middle user will not have direct access to these object constructors without editing the source code, which I would not recommend. 
+##
+### UserAccount
+Constructor Code:
+```lua
+local UserAccountTemplate = {}
+UserAccountTemplate.__index = UserAccountTemplate
+--#######################################################
+function UserAccountTemplate.new(uid,name,cred,acc,spec)
+	local NewUser = {}
+	setmetatable(NewUser,UserAccountTemplate)
+	NewUser.UserID = uid
+	NewUser.Name = name
+	NewUser.Credits = cred
+	NewUser.AccessLevel = acc
+	NewUser.SpecialPermissions = spec
+
+	return(NewUser)
+end
+```
+
+### Properties
+| Name | Datatype | Description | 
+|--|--|--|
+| UserID| Int | The UserId of the user|
+| Name | String | The username of the user|
+| Credits | Int | The amount of in-game currency a user has accumulated|
+| AccessLevel | Int | The numerical representation of a users in-game zone access |
+| SpecialPermissions | Array | An array of any special permissions which a user holds, such as, Administrator, Police, Moderator, Education Staff|
+
+### ReturnStatement
+Constructor Code:
+```lua
+local ReturnStatement = {}
+ReturnStatement.__index = ReturnStatement
+--#######################################################
+function ReturnStatement.new(code,data)
+	local NewStatement = {}
+	setmetatable(NewStatement,ReturnStatement)
+	NewStatement.Code = code
+	NewStatement.Data = data
+	
+	return(NewStatement)
+end
+```
+
+### Properties
+| Name | Datatype | Description | 
+|--|--|--|
+| Code| String | The resultant Code of an operation *E.g "Suc"/"Fail"*|
+| Data |  | The return data of an method/function|
+
+
+
+
+##
+### Functions
 ### Format:
 UserStore.*Function*(*Parameters*) -> *ReturnDataType ReturnData*
 
@@ -54,7 +114,7 @@ Tests the connection to your datastore
 |--|--|--|
 |  None |  | |
 ##
-### UserStore.getUserInfo(*UserId*) -> [*String* ResponseCode, *Array* UserProfile]
+### UserStore.getUserInfo(*UserId*) -> [*String* ResponseCode, *UserAccount* UserProfile]
 Queries the configured database for the stored profile of a requested user
 ### Parameters
 | Name |DataType  | Description|
@@ -64,6 +124,6 @@ Queries the configured database for the stored profile of a requested user
 | Name |DataType  | Description|
 |--|--|--|
 | ResponseCode| String |Suc/Fail - Indicated the state of the function |
-| UserProfile| Array | UserAccountTemplate Object|
+| UserProfile| UserAccount | UserAccount Object holding the requested User's data|
  
  
