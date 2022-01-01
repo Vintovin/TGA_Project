@@ -40,7 +40,7 @@ This will outline the areas of development which I am responsible for within the
 ### Design
 
  - [ ] Keycard
- - [ ] UI (Partial)
+ - [x] UI (Partial)
 
 
 ## Current Areas of Development
