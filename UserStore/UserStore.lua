@@ -86,6 +86,22 @@ yes.createNewUser = function(UID,name,cred,acc,spec)
 	local rs = ReturnStatement.new("suc",success)
 	return(rs)
 end
+--#######################################################
+--#######################################################  SAVE DATA
+--#######################################################
+yes.saveData = function(UID,Data)
+	
+	local success, errorMessage = pcall(function()
+		GS:SetAsync(UID, Data)
+	end)
+	if not success then
+		print(errorMessage)
+		local rs = ReturnStatement.new("fail",errorMessage)
+		return(rs)
+	end
+	local rs = ReturnStatement.new("suc",success)
+	return(rs)
+end
 --###########################################################################################################
 --///////////////////////////////////////////////////Returns/////////////////////////////////////////////////
 --###########################################################################################################
