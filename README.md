@@ -1,3 +1,4 @@
+
 # TGA_Project
 Private Repo for developers on the TGA project
 
@@ -7,7 +8,7 @@ I am a British Developer, meaning all date formats and spelling conventions will
 My active hours will be in line with the GMT/BST time zone and I typically do not work or respond to messages or DM's on British Public holidays (Bank Holidays)
 
 Discord: EXCEL#8402
-Email: vitorio@vitorio.click
+Email: [vitorio@vitorio.click](mailto:vitorio@vitorio.click)
 
 Date/Time: DD/MM/YY(YY) HH(:)MM
 
@@ -16,6 +17,12 @@ Date/Time: DD/MM/YY(YY) HH(:)MM
 https://miro.com/app/board/uXjVOZ76omY=/ - Project Dataflow Board
 
 ##
+### Contents Page
+
+ - [UserStore Documentation](https://github.com/Vintovin/TGA_Project/blob/main/UserStore/UserStoreDocumentation.md)
+
+##
+
 
 ## Areas of Development
 This will outline the areas of development which I am responsible for within the TGA Project
@@ -51,3 +58,5 @@ The Current script for the UserAccounts module has been uploaded to the Repo
 ### 01/01/2022
 Woohoo, new year!
 The repository has been updated to reflect the different modules coming into fruition for this project. In particular, the development of a dedicated Leaderboard module to handle all leaderboard and global data display aspects of the project.
+
+The UserStore Documentation has been uploaded to it's most up-to-date state
