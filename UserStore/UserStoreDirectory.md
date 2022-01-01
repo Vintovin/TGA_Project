@@ -114,16 +114,47 @@ Tests the connection to your datastore
 |--|--|--|
 |  None |  | |
 ##
-### UserStore.getUserInfo(*UserId*) -> [*String* ResponseCode, *UserAccount* UserProfile]
+### UserStore.getUserInfo(*UserId*) -> *ReturnStatement*
 Queries the configured database for the stored profile of a requested user
 ### Parameters
 | Name |DataType  | Description|
 |--|--|--|
 |  UserId| Int |The UserId of the requested User |
 ### Returns
+The structure of the return Statement
 | Name |DataType  | Description|
 |--|--|--|
 | ResponseCode| String |Suc/Fail - Indicated the state of the function |
-| UserProfile| UserAccount | UserAccount Object holding the requested User's data|
+| Data | UserAccount | UserAccount Object holding the requested User's data|
  
+### UserStore.createNewUser(*UID*,*name*,*Cred*,*Acc*,*Spec*) -> *ReturnStatement*
+Creates a new user object within the database
+### Parameters
+| Name |DataType  | Description|
+|--|--|--|
+|  UID | Int |The UserId of the requested new user |
+|  name | String |The Username of the requested new user |
+|  Cred | Int |The Credits belonging to the new user |
+|  Acc | Int |The Access level of the requested new user |
+|  Spec | Array |Any special permissions given to the requested new user |
+### Returns
+The structure of the return Statement
+| Name |DataType  | Description|
+|--|--|--|
+| ResponseCode| String |Suc/Fail - Indicated the state of the function |
+| Data | bool | The write status of the new user account|
  
+### UserStore.saveData(UID, Data) -> *ReturnStatement*
+Updates the existing entry of a user, by overwriting the previous UserAccount object with a new amended UserAccount object 
+### Parameters
+| Name |DataType  | Description|
+|--|--|--|
+|  UID | Int |The UserId of the requested new user |
+|  Data | UserAccount |The new UserAccount object of the desired user |
+
+### Returns
+The structure of the return Statement
+| Name |DataType  | Description|
+|--|--|--|
+| ResponseCode| String |Suc/Fail - Indicated the state of the function |
+| Data | bool | The write status of the new user account|
