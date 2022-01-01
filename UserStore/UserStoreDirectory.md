@@ -6,7 +6,9 @@ This is a brief documentation to explain the use setup and appropriate uses of t
 ##
 ## Installation
 Place the file in an appropriate location within the Game.
+
 ![Example placement](https://i.imgur.com/Mnx7X9X.png)
+
 It should be noted that this should be placed in an appropriate location, where clients would not be able to access, as this could lead to exploitation of the User Database system ***Which is not ideal for anyone***
 ##
 ## Setting up for use
