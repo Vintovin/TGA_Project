@@ -48,3 +48,6 @@ To further the efficiency of the module, an OOP paradigm to prevent and reduce r
 ### 28/12/2021
 The Current script for the UserAccounts module has been uploaded to the Repo
 ##
+### 01/01/2022
+Woohoo, new year!
+The repository has been updated to reflect the different modules coming into fruition for this project. In particular, the development of a dedicated Leaderboard module to handle all leaderboard and global data display aspects of the project.
