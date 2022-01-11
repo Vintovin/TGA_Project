@@ -60,3 +60,11 @@ Woohoo, new year!
 The repository has been updated to reflect the different modules coming into fruition for this project. In particular, the development of a dedicated Leaderboard module to handle all leaderboard and global data display aspects of the project.
 
 The UserStore Documentation has been uploaded to it's most up-to-date state
+
+##
+### 11/01/2022
+
+A new fork has been added to measure individual player playtime.
+The README.ME file has been written and can be found in the relevant folder
+
+
