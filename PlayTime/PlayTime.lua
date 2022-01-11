@@ -45,7 +45,7 @@ end
 --#######################################################
 local function SubmitUserPoints(sendData)
 	
-	local response = HTTP:PostAsync(IP,sendData,Enum.HttpContentType.TextPlain,false)
+	local response = HTTP:PostAsync(IP,HTTP:JSONEncode(sendData),Enum.HttpContentType.ApplicationJson,false)
 	print(response)
 end
 --#######################################################
