@@ -36,6 +36,7 @@ This will outline the areas of development which I am responsible for within the
  - [ ] Firearms
  - [ ] UI/GUI
  - [ ] Script Security and Management
+ - [x] User PlayTime Tracking
 
 ### Design
 
